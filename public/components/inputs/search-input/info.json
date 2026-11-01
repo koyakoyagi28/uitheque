@@ -1,0 +1,21 @@
+{
+  "id": "search-input",
+  "name": "Search Input",
+  "category": "inputs",
+  "description": "A compact search field with a decorative search glyph and clear accessible label.",
+  "tags": [
+    "input",
+    "search",
+    "filter",
+    "form"
+  ],
+  "version": "1.0.0",
+  "files": {
+    "html": "index.html",
+    "css": "style.css",
+    "js": "script.js",
+    "info": "info.json"
+  },
+  "dependencies": [],
+  "preview": true
+}

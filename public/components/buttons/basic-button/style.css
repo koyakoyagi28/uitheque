@@ -1,0 +1,13 @@
+.cl-basic-button {
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 8px;
+  background: #5267d8;
+  color: #fff;
+  font: 600 13px/1.2 system-ui, sans-serif;
+  cursor: pointer;
+  transition: background .18s, transform .18s;
+}
+.cl-basic-button:hover { background: #4054c4; }
+.cl-basic-button:active { transform: translateY(1px); }
+.cl-basic-button:focus-visible { outline: 3px solid #cbd2ff; outline-offset: 3px; }

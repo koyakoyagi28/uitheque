@@ -1,0 +1,21 @@
+{
+  "id": "basic-button",
+  "name": "Basic Button",
+  "category": "buttons",
+  "description": "A compact, rounded button with a clear hover and focus state.",
+  "tags": [
+    "button",
+    "primary",
+    "action",
+    "basic"
+  ],
+  "version": "1.0.0",
+  "files": {
+    "html": "index.html",
+    "css": "style.css",
+    "js": null,
+    "info": "info.json"
+  },
+  "dependencies": [],
+  "preview": true
+}

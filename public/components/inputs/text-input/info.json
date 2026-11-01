@@ -1,0 +1,21 @@
+{
+  "id": "text-input",
+  "name": "Text Input",
+  "category": "inputs",
+  "description": "A labelled text field with a subtle border and accessible focus treatment.",
+  "tags": [
+    "input",
+    "text",
+    "form",
+    "label"
+  ],
+  "version": "1.0.0",
+  "files": {
+    "html": "index.html",
+    "css": "style.css",
+    "js": null,
+    "info": "info.json"
+  },
+  "dependencies": [],
+  "preview": true
+}

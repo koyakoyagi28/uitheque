@@ -1,0 +1,15 @@
+.cl-icon-button {
+  display: inline-grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid #dfe3eb;
+  border-radius: 10px;
+  background: #fff;
+  color: #5267d8;
+  font: 400 25px/1 system-ui, sans-serif;
+  cursor: pointer;
+  transition: background .18s, border-color .18s;
+}
+.cl-icon-button:hover { border-color: #b9c3f4; background: #f3f5ff; }
+.cl-icon-button:focus-visible { outline: 3px solid #cbd2ff; outline-offset: 2px; }
