@@ -1,0 +1,24 @@
+{
+  "components": [
+    {
+      "id": "basic-button",
+      "path": "components/buttons/basic-button"
+    },
+    {
+      "id": "icon-button",
+      "path": "components/buttons/icon-button"
+    },
+    {
+      "id": "text-input",
+      "path": "components/inputs/text-input"
+    },
+    {
+      "id": "search-input",
+      "path": "components/inputs/search-input"
+    },
+    {
+      "id": "simple-modal",
+      "path": "components/modals/simple-modal"
+    }
+  ]
+}

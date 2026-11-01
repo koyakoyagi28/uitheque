@@ -1,0 +1,21 @@
+{
+  "id": "icon-button",
+  "name": "Icon Button",
+  "category": "buttons",
+  "description": "A square icon action button. Replace the plus symbol with an inline SVG or text icon.",
+  "tags": [
+    "button",
+    "icon",
+    "action",
+    "square"
+  ],
+  "version": "1.0.0",
+  "files": {
+    "html": "index.html",
+    "css": "style.css",
+    "js": null,
+    "info": "info.json"
+  },
+  "dependencies": [],
+  "preview": true
+}

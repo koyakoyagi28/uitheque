@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A reusable library of HTML, CSS and JavaScript components.">
+  <meta name="theme-color" content="#f7f8fa">
+  <title>Component Library</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="./assets/js/app.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="Component Library home">
+        <span class="brand-mark" aria-hidden="true">&lt;/&gt;</span>
+        <span class="brand-copy"><strong>Component Library</strong><small>HTML · CSS · JavaScript</small></span>
+      </a>
+      <a class="top-link" href="./ai-guide.md" target="_blank" rel="noopener">AI usage guide <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="eyebrow"><span class="status-dot"></span> OPEN COMPONENT COLLECTION</div>
+        <h1>Build interfaces<br><span>one component at a time.</span></h1>
+        <p class="hero-description">A small, reusable collection of interface elements. Preview each component, inspect its source, and copy the files into your project.</p>
+        <div class="hero-meta"><span id="component-count">Loading components…</span><span class="meta-divider"></span><span>Vanilla-first · No build step</span></div>
+      </section>
+
+      <section class="library-layout" aria-label="Component library">
+        <aside class="sidebar">
+          <div class="sidebar-heading">LIBRARY</div>
+          <button class="category-button is-active" data-category="all"><span class="category-icon">▦</span> All components <span class="category-count" id="all-count">0</span></button>
+          <div class="sidebar-heading category-heading">CATEGORIES</div>
+          <nav id="category-list" class="category-list" aria-label="Categories"></nav>
+          <div class="sidebar-note">
+            <span class="note-icon">✳</span>
+            <strong>Made to be reused</strong>
+            <p>Each component keeps its HTML, CSS and optional JavaScript in separate files.</p>
+          </div>
+        </aside>
+
+        <div class="catalog">
+          <div class="catalog-toolbar">
+            <div>
+              <div class="section-kicker">COLLECTION</div>
+              <h2 id="catalog-title">All components</h2>
+            </div>
+            <label class="search-box">
+              <span aria-hidden="true">⌕</span>
+              <input id="search-input" type="search" placeholder="Search components…" autocomplete="off">
+              <kbd>/</kbd>
+            </label>
+          </div>
+          <div id="component-grid" class="component-grid" aria-live="polite">
+            <div class="loading-state">Loading the component collection…</div>
+          </div>
+          <div id="empty-state" class="empty-state" hidden>
+            <span>⌕</span><strong>No components found</strong><p>Try another search term or category.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"><span>COMPONENT LIBRARY</span><span>Static · Portable · Reusable</span></footer>
+  </div>
+
+  <dialog id="component-dialog" class="component-dialog">
+    <div class="dialog-header">
+      <div><div class="section-kicker" id="dialog-category">COMPONENT</div><h2 id="dialog-title">Component</h2></div>
+      <button class="icon-button dialog-close" id="dialog-close" aria-label="Close dialog">×</button>
+    </div>
+    <p class="dialog-description" id="dialog-description"></p>
+    <div class="dialog-tags" id="dialog-tags"></div>
+    <section class="preview-section">
+      <div class="panel-heading"><span>LIVE PREVIEW</span><span class="panel-hint">Sandboxed iframe</span></div>
+      <div class="preview-frame-wrap"><iframe id="preview-frame" title="Component preview" sandbox="allow-scripts" loading="lazy"></iframe></div>
+    </section>
+    <section class="source-section">
+      <div class="source-heading">
+        <div class="source-tabs" role="tablist" aria-label="Source files">
+          <button class="source-tab is-active" data-file="html" role="tab">HTML</button>
+          <button class="source-tab" data-file="css" role="tab">CSS</button>
+          <button class="source-tab" data-file="js" role="tab">JS</button>
+          <button class="source-tab" data-file="info" role="tab">INFO</button>
+        </div>
+        <button id="copy-current" class="copy-button">Copy source</button>
+      </div>
+      <pre class="code-view"><code id="source-code">Select a component to view its source.</code></pre>
+      <div class="source-footer">
+        <span id="source-filename">index.html</span>
+        <button id="copy-all" class="text-button">Copy all available files ↗</button>
+      </div>
+    </section>
+    <section class="url-section">
+      <div class="panel-heading"><span>DIRECT FILE URLS</span><span class="panel-hint">Public raw files</span></div>
+      <div id="url-list" class="url-list"></div>
+    </section>
+  </dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+.cl-modal-demo { font-family: system-ui, sans-serif; }
+.cl-modal-trigger, .cl-modal__done { padding: 9px 15px; border: 0; border-radius: 7px; background: #5267d8; color: #fff; font: 600 11px system-ui, sans-serif; cursor: pointer; }
+.cl-modal { width: min(320px, calc(100% - 30px)); padding: 18px; border: 1px solid #e2e6ee; border-radius: 12px; background: #fff; color: #252a35; box-shadow: 0 18px 60px rgb(25 35 60 / 20%); font-family: system-ui, sans-serif; }
+.cl-modal::backdrop { background: rgb(25 30 42 / 35%); }
+.cl-modal__head { display: flex; align-items: center; justify-content: space-between; font-size: 13px; }
+.cl-modal__close { border: 0; background: transparent; color: #7e8795; font-size: 22px; cursor: pointer; }
+.cl-modal p { margin: 13px 0 18px; color: #697383; font-size: 11px; line-height: 1.7; }
+.cl-modal__done { background: #252a35; }

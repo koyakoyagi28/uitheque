@@ -1,0 +1,7 @@
+.cl-search { display: flex; align-items: center; gap: 9px; width: min(100%, 300px); padding: 0 11px; border: 1px solid #dfe3eb; border-radius: 9px; background: #fff; font-family: system-ui, sans-serif; }
+.cl-search:focus-within { border-color: #7182e2; box-shadow: 0 0 0 3px #edf0ff; }
+.cl-search__icon { color: #858e9d; font-size: 21px; }
+.cl-search input { width: 100%; min-width: 0; padding: 11px 0; border: 0; outline: 0; background: transparent; color: #252a35; font: 12px system-ui, sans-serif; }
+.cl-search input::placeholder { color: #a5acb8; }
+.cl-search__clear { border: 0; background: transparent; color: #7e8795; font-size: 19px; cursor: pointer; }
+.cl-search__status { margin: 9px 0 0; color: #818a98; font: 10px system-ui, sans-serif; }
